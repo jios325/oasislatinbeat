@@ -1761,10 +1761,7 @@ section.portada h5 {
     margin: 0 auto;
   }
   .videos-container {
-    background: url("../img/bkgr-blur.jpg") no-repeat center/300%;
-    background-position: center -130%;
     color: #000;
-    background-attachment: fixed;
   }
   .videos-container .artist-info {
     color: #fff;
