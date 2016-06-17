@@ -1,0 +1,117 @@
+@media only screen and (min-width: 48em)
+    #menu-mobil
+        position:initial
+        width:50%
+        display:inline-block
+    .menu ul.navegador
+        position:initial
+        background:none
+        margin:auto
+        padding:0
+        height:auto
+        list-style: none
+        padding:0px 20px
+    .menu ul.navegador li
+        display:inline-block
+    .menu ul.navegador ul.subnavegador li
+        display:block
+    .menu ul.navegador ul.subnavegador li a
+        display:block
+        box-sizing:border-box
+    .menu .navegador li a
+        display:inline-block
+        width:100%
+        padding:0px 20px
+        box-sizing:border-box
+        height:55px
+        line-height:55px
+        position:relative
+        font-size:14px
+        border-bottom:none
+    ul.subnavegador
+        position:absolute
+        display:none
+    .menu .navegador li a.desplegable
+        &:after
+            content: ''
+            border: 4px solid transparent
+            border-top: 4px solid white
+            margin-left: 5px
+            margin-bottom: 3px
+            display: inline-block
+            vertical-align: text-bottom
+    .menu .navegador li.selected a.desplegable
+        &:after
+            border-top:0px
+            border-bottom:4px solid white
+            margin-bottom:6px
+    // .menu .navegador li:not[".selected"] a.desplegable
+    //     &:after
+    //         content: ''
+    //         border: 4px solid transparent
+    //         border-top: 4px solid white
+    //         margin-left: 5px
+    //         margin-bottom: 3px
+    //         display: inline-block
+    //         vertical-align: text-bottom
+    .navegador li a.sub-item
+        &:before
+            font-family: FontAwesome
+            content:" \f068"
+      
+            font-size:12px
+            margin-right:10px
+        padding-left:25px
+        background:rgba(255,255,255,0.9)
+        color:$redColor
+        font-weight:400
+    .navegador li:hover
+        background:rgba(255,255,255,0.3)
+    .show-desk
+        display:block
+    header
+        padding:0px 10px
+        box-sizing:border-box
+        min-height:55px
+    #header-container
+        display:flex
+        align-items:center
+        .header-nav
+            display:inline-block
+        .desk-buttons
+            display:block
+            position:absolute
+            font-size:0
+            right:0
+            top:0
+            a
+                padding:20px
+                margin:0
+                font-size:12px
+            a:nth-child(1)
+                background-color:transparent
+                border-left:1px solid #fff
+    .mobil-content
+        display:none
+    a.buy-ticket,ul.buttons
+        display:none!important
+    //Empieza Estilos paraLos videos
+    .news-artist
+        .premio
+            margin:0 auto
+    .videos-container
+        background:url("../img/bkgr-blur.jpg") no-repeat center/ 300%
+        background-position: center -130%
+        color:#000
+        background-attachment:fixed
+        .artist-info
+            color:#fff
+            .title
+                h3,span
+                    text-transform:uppercase
+                h3
+                    font-size:$h2
+                    font-weight:700
+                span
+                    font-size:20px
+                    font-weight:300

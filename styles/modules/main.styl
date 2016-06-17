@@ -1,0 +1,152 @@
+a.buy-ticket
+	position:absolute
+	top:40px
+	left:0px
+	padding:15px 0px
+	z-index:10
+a.fixed
+	position:fixed
+	top:0
+	left:0
+section.portada
+	height:550px
+	background:url("../img/img-header.jpg") no-repeat
+	background-size:cover
+	background-position:center top
+	// border:1px solid green
+	display:flex
+	align-items:center
+	margin-top:-20px
+	h2
+		font-size:18px
+		color:$redColor
+		letter-spacing:7.5px
+		font-weight:100
+		text-transform: uppercase
+		margin-top:20px
+		tex-align:center
+		margin-right:-7.5px
+	h5
+		font-size:55px
+		color:$purpleColor
+		font-weight:100
+		margin-top:-10px
+		text-align:center
+.news-artist
+	background:$purpleColor
+	padding:10px 0px
+	
+	.premio
+		display: table
+		margin-left: 0
+		padding-left: 0
+		list-style: none
+		li
+			display: table-row
+			font-size:16px
+			&:before
+				font-family: FontAwesome;
+				font-size:1.5em
+				color:#fff
+				content: "\f10d"
+				display: table-cell
+				padding-right: 0.4em
+				vertical-align:middle
+			&:nth-child(2):before
+				content:""
+		p
+			font-style:italic
+			font-weight:100
+			font-size:13px
+.videos-container
+	.artist-img
+		height:180px
+		width:100%
+		padding:10px
+		position:relative
+		box-sizing:border-box
+		background-color:rgba(0,0,0,0.8)
+		// opacity:1
+		// transition:all 1s ease
+		.title
+			padding:57px
+			text-align:center
+			color:#fff
+			position:relative
+			h1,span
+				text-transform:uppercase
+			h1
+				font-size:$h3m
+				font-weight:700
+			span
+				font-size:20px
+				font-weight:100
+		a
+			position:absolute
+			bottom:10px
+			font-size:28px
+		a.btn-music
+			right:5px
+		a.btn-video
+			left:5px
+	.artist-info
+		background:rgba(0,0,0,0.1) url("../img/latin-beat-fondo.png") no-repeat right / 70%
+		padding:20px
+		box-sizing:border-box
+		height:180px
+	.artist-img.item-1:before
+		content:" "
+		background:url("../img/img-juan-magan.jpg") no-repeat center top / 180%
+		position:absolute
+		top:0
+		left:0
+		bottom:0
+		right:0
+		opacity:0.6
+		width:100%
+	.artist-img.item-2:before
+		content:" "
+		background:url("../img/img-alexis-y-fido.jpg") no-repeat center top / 100%
+		position:absolute
+		top:0
+		left:0
+		bottom:0
+		right:0
+		opacity:0.6
+		width:100%
+	.artist-img.item-3:before
+		content:" "
+		background:url("../img/img-angel-khriz.jpg") no-repeat center top / 100%
+		position:absolute
+		top:0
+		left:0
+		bottom:0
+		right:0
+		opacity:0.6
+		width:100%
+	.artist-img.item-4:before
+		content:" "
+		background:url("../img/img-j-alvarez.jpg") no-repeat center top / 100%
+		position:absolute
+		top:0
+		left:0
+		bottom:0
+		right:0
+		opacity:0.6
+		width:100%
+	.artist-img.item-5:before
+		content:" "
+		background:url("../img/img-tito-el-bambino.jpg") no-repeat center / cover
+		position:absolute
+		top:0
+		left:0
+		bottom:0
+		right:0
+		opacity:0.6
+		width:100%
+	.row-custom
+		margin:0 -2rem
+		// background:#000
+		.col-xs-12
+			padding-left:0
+			padding-right:0
