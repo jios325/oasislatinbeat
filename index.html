@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.css">
 	<link rel="stylesheet" href="plugins/Magnific-Popup-master/dist/magnific-popup.css">
 	<link rel="stylesheet" href="css/video-slider.css">
+	<link rel="stylesheet" href="plugins/unslider-master/dist/css/unslider.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -55,8 +56,8 @@
 	</div>
 </header>
 <a href="#" class="buy-ticket btn-movil btn-buy">Comprar Ahora</a>
-<section class="portada">
-	<div id="logo-portada" class="container-fluid container">
+<section class="portada" style="overflow:hidden;">
+	<!-- <div id="logo-portada" class="container-fluid container">
 		<div class="row middle-xs center-xs">
 			<div class="col-xs-12">
 				<img src="img/logo-electro-oasis.png" alt="">
@@ -66,10 +67,11 @@
 				<h5>2016</h5>
 			</div>
 		</div>
-	</div>
+	</div> -->
+	<!-- <iframe id="queen" src="https://player.vimeo.com/video/13416084" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 </section>
 <section class="news-artist">
-	<div class="container-fluid">
+	<!-- <div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12">
 				<ul class="premio">
@@ -78,7 +80,7 @@
 				</ul>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </section>
 <section class="prueba">
 	<div class="container-videos">
@@ -247,13 +249,15 @@
 		</div>
 	</div>
 </footer>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> 
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdn.rawgit.com/jrue/Vimeo-jQuery-API/master/dist/jquery.vimeo.api.min.js"></script>
 <script src="js/doubletaptogo.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.js"></script>
 <script src="plugins/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
 <script src="js/stellar.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
 <script src="js/infinite-carousel.js"></script>
+<script src="js/slidertext.js"></script>
 <script>//ARREGLAR LO DEL MENUUU
 	$(window).bind('scroll', function (e) {
 	    if ($(window).scrollTop() > 40) {
@@ -299,6 +303,13 @@
 	    responsive: true,
 	    horizontalOffset: 150,
 	  	verticalOffset: 150
+	});
+</script>
+<script>
+	$(document).ready(function($) {
+
+	    $("#queen").vimeo("play");
+
 	});
 </script>
 </body>
