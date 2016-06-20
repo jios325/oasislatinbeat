@@ -95,15 +95,64 @@
         display:none
     a.buy-ticket,ul.buttons
         display:none!important
-    //Empieza Estilos paraLos videos
+    //Empieza Estilos para Video Principal
+    .video-controls
+        position:absolute
+        bottom:20px
+        right:20px
+        z-index:999
+    .portada:before
+        content:" "
+        position:absolute
+        top:0
+        left:0
+        bottom:0
+        right:0
+        background:url("../img/logo-electro-oasis.png") no-repeat center
+        background-position:10% 15%
+        width:100%
+        height:100%
+    .loader:before
+        content:""
+        position:absolute
+        top:0
+        left:0
+        bottom:0
+        right:0
+        width:100%
+        height:100%
+        background:url("../img/ring.svg") no-repeat center
+    .loader.hiddeLoader:before
+        content:""
+        position:absolute
+        top:0
+        left:0
+        bottom:0
+        right:0
+        width:100%
+        height:100%
+        background:none
+    //Estilos Slider de Noticias
     .news-artist
         .premio
             margin:0 auto
+            padding-left:50px
+            li
+                font-size:20px
+                &:before
+                    font-size:2em
+                    position:absolute
+                    margin-left:-50px
+            p
+                font-size:18px
+    .wrapper
+        width:50%
+    //Estilos para Videos de Artistas por bloque
     .videos-container
-        // background:url("../img/bkgr-blur.jpg") no-repeat center/ 300%
+        background:url("../img/bkgr-blur.jpg") center/ 200%
         // background-position: center -130%
         color:#000
-        // background-attachment:fixed
+        background-attachment:fixed
         .artist-info
             color:#fff
             .title
