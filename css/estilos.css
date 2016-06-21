@@ -386,7 +386,7 @@ a img {
 @media only screen and (min-width: 48em) {
   .container {
     /*width: 49rem;*/
-    width: 80%;
+    width: 85%;
   }
 
   .col-sm,
@@ -890,7 +890,7 @@ a img {
 @media only screen and (min-width: 75em) {
   .container {
     /*width: 76rem;*/
-    width: 85%;
+    width: 70%;
   }
 
   .col-lg,
@@ -1161,7 +1161,6 @@ a img {
   border-style: none;
   vertical-align: middle;
   display: inline-block;
-  margin-left: 5px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   text-decoration: none;
@@ -1309,6 +1308,12 @@ small {
 }
 .text-center {
   text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
 }
 .light {
   font-weight: 300;
@@ -1602,6 +1607,7 @@ section.portada h5 {
   position: relative;
   text-decoration: none;
   font-weight: 100;
+  text-transform: uppercase;
   font-size: 14px;
   color: #d2d2d2;
   -webkit-transition: all 0.2s linear;
@@ -1633,12 +1639,11 @@ section.portada h5 {
 }
 .navegador li a.sub-item {
   padding-left: 35px;
-  background: #008000;
+  background: rgba(255,255,255,0.2);
 }
 @media only screen and (min-width: 48em) {
   #menu-mobil {
     position: initial;
-    width: 50%;
     display: inline-block;
   }
   .menu ul.navegador {
@@ -1665,7 +1670,7 @@ section.portada h5 {
   .menu .navegador li a {
     display: inline-block;
     width: 100%;
-    padding: 0px 20px;
+    padding: 0px 15px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1758,6 +1763,98 @@ section.portada h5 {
   ul.buttons {
     display: none !important;
   }
+  section.portada {
+    height: 100%;
+    overflow: hidden;
+  }
+  .news-artist {
+    padding: 20px 10px;
+  }
+  .news-artist .premio {
+    margin: 0 auto;
+    padding-left: 50px;
+  }
+  .news-artist .premio li {
+    font-size: 20px;
+  }
+  .news-artist .premio li:before {
+    font-size: 2em;
+    position: absolute;
+    margin-left: -50px;
+  }
+  .news-artist .premio p {
+    font-size: 18px;
+  }
+  .wrapper {
+    width: 50%;
+  }
+  .videos-container {
+    background: url("../img/bkgr-blur.jpg") center/230%;
+    color: #000;
+    background-attachment: fixed;
+  }
+  .videos-container .artist-img {
+    height: 260px;
+  }
+  .videos-container .artist-info {
+    color: #fff;
+    height: 260px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+  .videos-container .artist-info .title h3,
+  .videos-container .artist-info .title span {
+    text-transform: uppercase;
+  }
+  .videos-container .artist-info .title h3 {
+    font-size: 29px;
+    font-weight: 700;
+  }
+  .videos-container .artist-info .title span {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .videos-container .artist-info .form-buttons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+  .videos-container .artist-info .form-buttons a {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 64em) {
+  #logo-portada {
+    display: none;
+  }
+  .show-md {
+    display: block;
+  }
   .video-controls {
     position: absolute;
     bottom: 20px;
@@ -1798,42 +1895,32 @@ section.portada h5 {
     height: 100%;
     background: none;
   }
-  .news-artist .premio {
-    margin: 0 auto;
-    padding-left: 50px;
+  .portada .loader {
+    height: 100%;
+    width: 100%;
   }
-  .news-artist .premio li {
-    font-size: 20px;
-  }
-  .news-artist .premio li:before {
-    font-size: 2em;
-    position: absolute;
-    margin-left: -50px;
-  }
-  .news-artist .premio p {
-    font-size: 18px;
-  }
-  .wrapper {
-    width: 50%;
-  }
-  .videos-container {
-    background: url("../img/bkgr-blur.jpg") center/200%;
-    color: #000;
-    background-attachment: fixed;
+  .videos-container .artist-img {
+    height: 280px;
   }
   .videos-container .artist-info {
-    color: #fff;
+    height: 280px;
+    padding: 30px 20px;
   }
-  .videos-container .artist-info .title h3,
-  .videos-container .artist-info .title span {
-    text-transform: uppercase;
+  .videos-container .artist-info .reproductor,
+  .videos-container .artist-info .form-buttons {
+    max-width: 80%;
   }
-  .videos-container .artist-info .title h3 {
-    font-size: 29px;
-    font-weight: 700;
+  .videos-container .artist-info .reproductor.right,
+  .videos-container .artist-info .form-buttons.right {
+    padding-left: 20%;
   }
-  .videos-container .artist-info .title span {
-    font-size: 20px;
-    font-weight: 300;
+}
+@media only screen and (min-width: 75em) {
+  .videos-container .artist-img {
+    height: 320px;
+  }
+  .videos-container .artist-info {
+    height: 320px;
+    padding: 30px 20px;
   }
 }

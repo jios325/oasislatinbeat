@@ -6,7 +6,7 @@
 	<title>Latin Beat Fest</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.css">
 	<link rel="stylesheet" href="plugins/Magnific-Popup-master/dist/magnific-popup.css">
 	<link rel="stylesheet" href="css/video-slider.css">
@@ -57,7 +57,7 @@
 	</div>
 </header>
 <a href="#" class="buy-ticket btn-movil btn-buy">Comprar Ahora</a>
-<section class="portada" style="overflow:hidden;height:100%;">
+<section class="portada">
 	<div id="logo-portada" class="container-fluid container">
 		<div class="row middle-xs center-xs">
 			<div class="col-xs-12">
@@ -67,14 +67,17 @@
 				<h2>Cancun</h2>
 				<h5>2016</h5>
 			</div>
+			<div class="col-xs-12">
+				<a href="#"><i class="fa fa-play-circle-o fa-5x"></i></a>
+			</div>
 		</div>
 	</div>
-	<div class="video-controls hidden">
+	<div class="video-controls hidden-xs show-md">
 		<a id="video-play" href="#" class="btn"><i class="fa fa-play"></i></a>
 		<a id="video-pause" href="#" class="btn"><i class="fa fa-pause"></i></a>
 		<a id="video-mute" href="#" class="btn"><i class="fa fa-volume-off"></i></a>
 	</div>
-	<div class="loader hidden" style="height:100%; width:100%;">
+	<div class="loader hidden-xs show-md">
 		<iframe id="queen" src="https://player.vimeo.com/video/170549213" width="100%" height="110%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
 		</iframe>
 	</div>
@@ -101,38 +104,38 @@
 		</div>
 	</div>
 </section>
-<!-- <section class="prueba">
+<section class="videos-carrousel hidden-xs show-desk">
 	<div class="container-videos">
 		<div class="wrapper wrapper--demo">
-		<div class="carousel">
-			<div class="carousel__content">
-			<div class="item">
-	        	<iframe width="560" height="380" src="https://www.youtube.com/embed/7QU1nvuxaMA" frameborder="0" allowfullscreen></iframe>
-	      	</div>
-			<div class="item">
-		        <iframe width="560" height="380" src="https://www.youtube.com/embed/7QU1nvuxaMA" frameborder="0" allowfullscreen></iframe>
-		    </div>
-			<div class="item">
-		        <iframe width="560" height="380" src="https://www.youtube.com/embed/7QU1nvuxaMA" frameborder="0" allowfullscreen></iframe>
-		    </div>
-			<div class="item">
-	        	<iframe width="560" height="380" src="https://www.youtube.com/embed/7QU1nvuxaMA" frameborder="0" allowfullscreen></iframe>
-	      	</div>
-			<div class="item">
-	        	<iframe width="560" height="380" src="https://www.youtube.com/embed/7QU1nvuxaMA" frameborder="0" allowfullscreen></iframe>
-	      	</div>
-			<div class="item">
-			    <iframe width="560" height="380" src="https://www.youtube.com/embed/7QU1nvuxaMA" frameborder="0" allowfullscreen></iframe>
+			<div class="carousel">
+				<div class="carousel__content">
+					<div class="item">
+			        	<iframe width="560" height="380" src="https://www.youtube.com/embed/7QU1nvuxaMA" frameborder="0" allowfullscreen></iframe>
+			      	</div>
+					<div class="item">
+				        <iframe width="560" height="380" src="https://www.youtube.com/embed/7QU1nvuxaMA" frameborder="0" allowfullscreen></iframe>
+				    </div>
+					<div class="item">
+				        <iframe width="560" height="380" src="https://www.youtube.com/embed/7QU1nvuxaMA" frameborder="0" allowfullscreen></iframe>
+				    </div>
+					<div class="item">
+			        	<iframe width="560" height="380" src="https://www.youtube.com/embed/7QU1nvuxaMA" frameborder="0" allowfullscreen></iframe>
+			      	</div>
+					<div class="item">
+			        	<iframe width="560" height="380" src="https://www.youtube.com/embed/7QU1nvuxaMA" frameborder="0" allowfullscreen></iframe>
+			      	</div>
+					<div class="item">
+					    <iframe width="560" height="380" src="https://www.youtube.com/embed/7QU1nvuxaMA" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			    <div class="carousel__nav">
+			      <a href="#" class="nav nav--left"><i class="fa fa-angle-left fa-2x"></i></a>
+			      <a href="#" class="nav nav--right"><i class="fa fa-angle-right fa-2x"></i></a>
+			    </div>
 			</div>
-			</div>
-		    <div class="carousel__nav">
-		      <a href="#" class="nav nav--left"><i class="fa fa-angle-left fa-2x"></i></a>
-		      <a href="#" class="nav nav--right"><i class="fa fa-angle-right fa-2x"></i></a>
-		    </div>
 		</div>
 	</div>
-	</div>
-</section> -->
+</section>
 <section class="videos-container" data-stellar-background-ratio="2">
 	<div class="container-fluid container">
 		<div class="row row-custom">
@@ -152,23 +155,30 @@
 				<div class="artist-info item-1">
 					<div class="title">
 						<h3>Juan Magán</h3>
-						<span>July 9 Cancun MX</span>
+						<span>July 9 / Cancun MX</span>
 					</div>
 					<div class="reproductor">
+						<div id="dz-root"></div>
 						<!-- <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&width=400&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=92720038&app_id=1" width="100%" height="90"></iframe> -->
 					</div>
 					<div class="form-buttons text-center">
 						<a href="#" class="btn btn-buy">COMPRAR BOLETOS</a>
-						<a href="#" class="btn btn-default"><i class="fa fa-align-left"></i>Ver Mas</a>
-						<a href="#" class="btn btn-default"><i class="fa fa-calendar fa-fw"></i> + Recordatorio</a>
+						<a href="#" class="btn btn-default"><i class="fa fa-align-left"></i> VER MAS</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 hidden-xs show-desk">
 				<div class="artist-info item-1">
-					<div class="title">
+					<div class="title text-right">
 						<h3>Tito el Bambino</h3>
-						<span>July 16 Cancun MX</span>
+						<span>July 16 / Cancun MX</span>
+					</div>
+				<!-- 	<div class="reproductor right">
+						<iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&width=400&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=92720038&app_id=1" width="100%" height="90"></iframe>
+					</div> -->
+					<div class="form-buttons right text-center">
+						<a href="#" class="btn btn-buy">COMPRAR BOLETOS</a>
+						<a href="#" class="btn btn-default"><i class="fa fa-align-left"></i> VER MAS</a>
 					</div>
 				</div>
 			</div>
@@ -201,15 +211,29 @@
 				<div class="artist-info item-1">
 					<div class="title">
 						<h3>Angél y Khriz</h3>
-						<span>July 9 Cancun MX</span>
+						<span>July 9 / Cancún MX</span>
+					</div>
+					<!-- <div class="reproductor">
+						<iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&width=400&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=92720038&app_id=1" width="100%" height="90"></iframe>
+					</div> -->
+					<div class="form-buttons text-center">
+						<a href="#" class="btn btn-buy">COMPRAR BOLETOS</a>
+						<a href="#" class="btn btn-default"><i class="fa fa-align-left"></i> VER MAS</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 hidden-xs show-desk">
 				<div class="artist-info item-1">
-					<div class="title">
+					<div class="title text-right">
 						<h3>J. Álvarez</h3>
-						<span>July 16 Cancun MX</span>
+						<span>July 16 / Cancun MX</span>
+					</div>
+					<!-- <div class="reproductor right">
+						<iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&width=400&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=92720038&app_id=1" width="100%" height="90"></iframe>
+					</div> -->
+					<div class="form-buttons right text-center">
+						<a href="#" class="btn btn-buy">COMPRAR BOLETOS</a>
+						<a href="#" class="btn btn-default"><i class="fa fa-align-left"></i> VER MAS</a>
 					</div>
 				</div>
 			</div>
@@ -241,7 +265,14 @@
 				<div class="artist-info item-1">
 					<div class="title">
 						<h3>Alexis y Fido</h3>
-						<span>July 9 Cancun MX</span>
+						<span>July 9 / Cancun MX</span>
+					</div>
+					<!-- <div class="reproductor">
+						<iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&width=400&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=92720038&app_id=1" width="100%" height="90"></iframe>
+					</div> -->
+					<div class="form-buttons text-center">
+						<a href="#" class="btn btn-buy">COMPRAR BOLETOS</a>
+						<a href="#" class="btn btn-default"><i class="fa fa-align-left"></i> VER MAS</a>
 					</div>
 				</div>
 			</div>
@@ -251,10 +282,10 @@
 <footer>
 	<div class="foot-container block-center">
 		<div class="flex-container">
-			<div >
+			<div>
 				<img src="img/goc-logo.png" alt="">
 			</div>
-			<div >
+			<div>
 				<div class="logo-piramyd">
 					<img src="img/the-pyramid-logo.png" alt="">
 				</div>
@@ -276,15 +307,15 @@
 	  return check;
 	}
 </script>
- <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
 <script src="https://cdn.rawgit.com/jrue/Vimeo-jQuery-API/master/dist/jquery.vimeo.api.min.js"></script>
+<!-- <script src="https://cdns-files.dzcdn.net/js/min/dz.js"></script> -->
 <script src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.js"></script>
 <script src="plugins/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
 <script src="js/stellar.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
 <script src="js/infinite-carousel.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-<script>//ARREGLAR LO DEL MENUUU
+<script>
 	$(window).bind('scroll', function (e) {
 	    if ($(window).scrollTop() > 40) {
 	        $('.buy-ticket').addClass('fixed');
@@ -323,19 +354,20 @@
 	    });
  	});
 </script>
-<script>
+<script>//Scripts NO ejecutables en Moviles
 	if(!window.is_mobile) {
        $.stellar({
 	    horizontalScrolling: false,
 	    responsive: true,
 	    horizontalOffset: 150,
 	  	verticalOffset: 150
-	});
+		});
+       // console.log("HOLAA");
     }
 </script>
-<script>
+<script>//Video Principal y Controles
 	$(document).ready(function($) {
-	    $("#queen").vimeo("play").vimeo("seekTo", 0).vimeo("setLoop",true);
+	    // $("#queen").vimeo("play").vimeo("seekTo", 0).vimeo("setLoop",true);
 	    $("#queen").on("playProgress",function(event,data){
 	    	if(data.seconds>0){
 	    		$(".loader").addClass("hiddeLoader");
@@ -361,37 +393,13 @@
 <script type="text/javascript">
     $(document).ready(function(){
       $(".slider-news").slick({
-
 	  // normal options...
 	  infinite: true,
 	  autoplay:true,
 	  dots:false,
 	  speed:1000,
 	  arrows:false,
-	  centerPadding:"100px"
 	  // Puntos de quiebre para Responsividad
-	  // responsive: [{
-
-	  //     breakpoint: 1024,
-	  //     settings: {
-	  //       slidesToShow: 3,
-	  //       infinite: true
-	  //     }
-
-	  //   }, {
-
-	  //     breakpoint: 600,
-	  //     settings: {
-	  //       slidesToShow: 2,
-	  //       dots: true
-	  //     }
-
-	  //   }, {
-
-	  //     breakpoint: 300,
-	  //     settings: "unslick" // destroys slick
-
-	  //   }]
 		});
 	});
 </script>

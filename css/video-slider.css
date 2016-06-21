@@ -11,7 +11,7 @@
  * Use this wrapper only for demo purposes
  * So you can show the items outside the wrapper
  */
- section.prueba{
+ section.videos-carrousel{
   border-top:10px solid red;
   border-bottom:10px solid red;
  }
@@ -22,6 +22,10 @@
   width: 100%;
   display: block;
  }
+/* .carousel-content iframe{
+  width:560;
+  height: 380;
+ }*/
 .wrapper--demo {
   overflow: visible;
 }

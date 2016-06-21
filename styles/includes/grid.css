@@ -295,7 +295,7 @@
 @media only screen and (min-width: 48em) {
   .container {
     /*width: 49rem;*/
-    width: 80%;
+    width: 85%;
   }
 
   .col-sm,
@@ -799,7 +799,7 @@
 @media only screen and (min-width: 75em) {
   .container {
     /*width: 76rem;*/
-    width: 85%;
+    width: 70%;
   }
 
   .col-lg,

@@ -1,7 +1,7 @@
 @media only screen and (min-width: 48em)
     #menu-mobil
         position:initial
-        width:50%
+        // width:50%
         display:inline-block
     .menu ul.navegador
         position:initial
@@ -21,7 +21,7 @@
     .menu .navegador li a
         display:inline-block
         width:100%
-        padding:0px 20px
+        padding:0px 15px
         box-sizing:border-box
         height:55px
         line-height:55px
@@ -95,45 +95,13 @@
         display:none
     a.buy-ticket,ul.buttons
         display:none!important
-    //Empieza Estilos para Video Principal
-    .video-controls
-        position:absolute
-        bottom:20px
-        right:20px
-        z-index:999
-    .portada:before
-        content:" "
-        position:absolute
-        top:0
-        left:0
-        bottom:0
-        right:0
-        background:url("../img/logo-electro-oasis.png") no-repeat center
-        background-position:10% 15%
-        width:100%
+    //Estilos Portada Principal
+    section.portada
         height:100%
-    .loader:before
-        content:""
-        position:absolute
-        top:0
-        left:0
-        bottom:0
-        right:0
-        width:100%
-        height:100%
-        background:url("../img/ring.svg") no-repeat center
-    .loader.hiddeLoader:before
-        content:""
-        position:absolute
-        top:0
-        left:0
-        bottom:0
-        right:0
-        width:100%
-        height:100%
-        background:none
+        overflow:hidden
     //Estilos Slider de Noticias
     .news-artist
+        padding:20px 10px
         .premio
             margin:0 auto
             padding-left:50px
@@ -145,16 +113,23 @@
                     margin-left:-50px
             p
                 font-size:18px
+    //ESTILOS CARROUSEL DE VIDEOS
     .wrapper
         width:50%
     //Estilos para Videos de Artistas por bloque
     .videos-container
-        background:url("../img/bkgr-blur.jpg") center/ 200%
+        background:url("../img/bkgr-blur.jpg") center/ 230%
         // background-position: center -130%
         color:#000
         background-attachment:fixed
+        .artist-img
+            height:260px
         .artist-info
             color:#fff
+            height:260px
+            display:flex
+            flex-direction:column
+            justify-content:space-between
             .title
                 h3,span
                     text-transform:uppercase
@@ -164,3 +139,8 @@
                 span
                     font-size:20px
                     font-weight:300
+            .form-buttons
+                display:flex
+                justify-content:space-between
+                a
+                    width:40%
