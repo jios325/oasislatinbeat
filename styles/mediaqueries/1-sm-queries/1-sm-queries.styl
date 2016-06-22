@@ -1,7 +1,9 @@
 @media only screen and (min-width: 48em)
+    .hidden-desk
+        display:none
     #menu-mobil
         position:initial
-        // width:50%
+        width:100%
         display:inline-block
     .menu ul.navegador
         position:initial
@@ -21,7 +23,7 @@
     .menu .navegador li a
         display:inline-block
         width:100%
-        padding:0px 15px
+        padding:0px 10px
         box-sizing:border-box
         height:55px
         line-height:55px
@@ -45,15 +47,15 @@
             border-top:0px
             border-bottom:4px solid white
             margin-bottom:6px
-    // .menu .navegador li:not[".selected"] a.desplegable
-    //     &:after
-    //         content: ''
-    //         border: 4px solid transparent
-    //         border-top: 4px solid white
-    //         margin-left: 5px
-    //         margin-bottom: 3px
-    //         display: inline-block
-    //         vertical-align: text-bottom
+    .menu .navegador li:not([".selected"]) a.desplegable
+        &:after
+            content: ''
+            border: 4px solid transparent
+            border-top: 4px solid white
+            margin-left: 5px
+            margin-bottom: 3px
+            display: inline-block
+            vertical-align: text-bottom
     .navegador li a.sub-item
         &:before
             font-family: FontAwesome
@@ -88,6 +90,7 @@
                 padding:20px
                 margin:0
                 font-size:12px
+                text-transform:uppercase
             a:nth-child(1)
                 background-color:transparent
                 border-left:1px solid #fff
@@ -144,3 +147,30 @@
                 justify-content:space-between
                 a
                     width:40%
+        .artist-img.item-2:before
+            background:url("../img/img-alexis-y-fido.jpg") no-repeat center top / cover
+        .artist-img.item-3:before
+            background:url("../img/img-angel-khriz.jpg") no-repeat center top / cover
+        .artist-img.item-4:before
+            background:url("../img/img-j-alvarez.jpg") no-repeat center top / cover
+    //EMPIEZAN ESTILOS DE PAGINA POR ARTISTA
+    section.bkgr-artist
+        height:80vh
+        background:url("../img/bkgr-blur.jpg") no-repeat center / cover
+        align-items:flex-end
+        #info-artist
+            border:1px solid #fff
+            height:80%
+            background:rgba(0,0,0,0.2)
+        img
+            width:100%
+        img.artist
+            display:none
+    section.event-details
+        img
+            right:0
+            width:75%
+    #googleMap
+        width:100%
+        height:400px
+        

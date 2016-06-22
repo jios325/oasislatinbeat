@@ -23,7 +23,7 @@
 				</a>
 			</div>
 			<ul class="buttons">
-				<li><a href=""><i>ing</i></a></li>
+				<!-- <li><a href=""><i>ing</i></a></li> -->
 				<li><a href="tel://+52998000000"><i class="fa fa-phone fa-fw"></i></a></li>
 				<li><a id="mobile-menu" href="#"><i class="fa fa-bars fa-fw"></i></a></li>
 			</ul>
@@ -61,14 +61,14 @@
 	<div id="logo-portada" class="container-fluid container">
 		<div class="row middle-xs center-xs">
 			<div class="col-xs-12">
-				<img src="img/logo-electro-oasis.png" alt="">
+				<img style="width:70%" src="img/EOB-2016-color.png" alt="">
 			</div>
 			<div class="col-xs-12">
 				<h2>Cancun</h2>
 				<h5>2016</h5>
 			</div>
 			<div class="col-xs-12">
-				<a href="#"><i class="fa fa-play-circle-o fa-5x"></i></a>
+				<a href="https://vimeo.com/171604092" class=" video-modal link-video"><i class="fa fa-play-circle-o fa-5x"></i></a>
 			</div>
 		</div>
 	</div>
@@ -78,8 +78,7 @@
 		<a id="video-mute" href="#" class="btn"><i class="fa fa-volume-off"></i></a>
 	</div>
 	<div class="loader hidden-xs show-md">
-		<iframe id="queen" src="https://player.vimeo.com/video/170549213" width="100%" height="110%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-		</iframe>
+		<iframe id="promo-video" src="https://player.vimeo.com/video/171604092?title=0&byline=0&portrait=0" width="100%" height="110%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 </section>
 <section class="news-artist">
@@ -204,7 +203,6 @@
 						<a href="#" class="btn-video"><i class="fa fa-play-circle fa-fw pull-left"></i></a>
 						<a href="#" class="btn-music"><i class="fa fa-headphones fa-fw pull-right"></i></a>
 					</div>
-					
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 hidden-xs show-desk">
@@ -329,8 +327,6 @@
 <script>
 	$(document).ready(function(){
     $('.video-modal').magnificPopup({type:'iframe'});
-    /* auto-open #firstlink on page load */
-    // $("#firstlink").venobox().trigger('click');
 	});
 </script>
 <script>
@@ -367,8 +363,8 @@
 </script>
 <script>//Video Principal y Controles
 	$(document).ready(function($) {
-	    // $("#queen").vimeo("play").vimeo("seekTo", 0).vimeo("setLoop",true);
-	    $("#queen").on("playProgress",function(event,data){
+	    // $("#promo-video").vimeo("play").vimeo("seekTo", 0).vimeo("setLoop",true);
+	    $("#promo-video").on("playProgress",function(event,data){
 	    	if(data.seconds>0){
 	    		$(".loader").addClass("hiddeLoader");
 	    	}
@@ -377,13 +373,13 @@
 	    	console.log($(this));
 	    	switch($(this).attr("id")){
 	    		case "video-pause":
-	    			$("#queen").vimeo("pause");
+	    			$("#promo-video").vimeo("pause");
 	    			break;
 	    		case "video-play":
-	    			$("#queen").vimeo("play");
+	    			$("#promo-video").vimeo("play");
 	    			break;
 	    		case "video-mute":
-	    			$("#queen").vimeo("setVolume",0);
+	    			$("#promo-video").vimeo("setVolume",0);
 	    			break;
 	    	}
 	    	e.preventDefault();

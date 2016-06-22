@@ -1,0 +1,107 @@
+h6.title
+	font-size:15px
+	font-weight:600
+	padding:10px 0px
+	text-transform:uppercase
+hr.separator
+	margin:0
+	border:none
+	margin-left:-20px
+	margin-right:-20px
+	border-bottom:1px solid white
+	border-color:#5D5D5D
+	// box-shadow:0px 2px 4px rgba(255,255,255,0.5) inset
+#header-container
+	.return
+		display:inline-block
+		a i
+			line-height:40px
+			font-size:35px
+			padding:0px 15px
+#info-artist
+	margin-top:90px
+section.bkgr-artist
+	height:550px
+	display:flex
+	align-items:center
+	background-color:rgba(0,0,0,0.8)
+	position:relative
+	overflow:hidden
+	h1,img,h5,a
+		position:relative
+	h1
+		text-transform:uppercase
+		font-weight:600
+		font-size:50px
+		text-align:center
+		line-height:50px
+		margin:10px 0px
+	h5
+		text-transform:uppercase
+		font-size:30px
+		font-weight:300
+	a
+		margin:0px 5px
+		i
+			margin:10px 0px
+	img.artist
+		position:absolute
+		width:300%
+		opacity:0.8
+		left:50%
+		margin-left:-150%
+section.event-details
+	background:$blackColor
+	position:relative
+	// padding:10px 20px
+	overflow:hidden
+	img
+		position:absolute
+		right:-125px
+		top:0
+		width:130%
+		transform:scaleX(-1)
+		z-index:0
+	.location
+		padding:10px 0px
+		position:relative
+		margin-bottom:30px
+		a
+			margin-right:10px
+	.sale-tickets,.biography
+		p
+			font-size:14px
+			line-height:20px
+			font-weight:300
+			margin-bottom:30px
+	.social-networks
+		padding:20px 0px
+		position:relative
+		a:hover
+			color:lighten($blackColor,30%)
+	.biography
+		margin:10px 0px
+		span
+			font-style:italic
+			display:block
+			margin-bottom:10px
+.place-event
+		display: table
+		margin-left: 0
+		padding-left: 0
+		list-style: none
+		margin:0 auto
+		margin-bottom:10px
+		li
+			display: table-row
+			font-size:14px
+			font-weight:300
+			line-height:20px
+			&:before
+				font-family: FontAwesome;
+				font-size:1em
+				color:#fff
+				content: "\f124"
+				display: table-cell
+				padding-right: 0.4em
+				vertical-align:text-top
