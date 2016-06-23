@@ -9,14 +9,23 @@ a.fixed
 	top:0
 	left:0
 section.portada
-	height:550px
-	background:url("../img/img-header.jpg") no-repeat
+	min-height:100%
+	background:url("../img/img-header@2x.jpg") no-repeat
 	background-size:cover
 	background-position:center top
 	// border:1px solid green
 	display:flex
 	align-items:center
-	margin-top:-20px
+	overflow:hidden
+	// margin-top:-20px
+	img
+		width:70%
+	h1.title
+		font-size:22px
+		color:$redColor
+		letter-spacing:7px
+		text-transform:uppercase
+		margin-top:15px
 	h2
 		font-size:18px
 		color:$redColor
@@ -32,11 +41,17 @@ section.portada
 		font-weight:100
 		margin-top:-10px
 		text-align:center
+	hr.underline
+		margin:0
+		border:none
+		width:50%
+		border-top:2px solid $redColor
+		margin:0 auto
 	.link-video
 		color:$redColor
 		transition:all 0.5s ease
 		i
-			margin-top:10px
+			margin-top:20px
 		&:hover
 			color:$purpleColor
 .news-artist

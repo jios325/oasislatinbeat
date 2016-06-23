@@ -1224,8 +1224,7 @@ hr.separator {
   border: none;
   margin-left: -20px;
   margin-right: -20px;
-  border-bottom: 1px solid #fff;
-  border-color: #5d5d5d;
+  border-bottom: 1px solid #5d5d5d;
 }
 #header-container .return {
   display: inline-block;
@@ -1266,7 +1265,6 @@ section.bkgr-artist h1 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 50px;
-  text-align: center;
   line-height: 50px;
   margin: 10px 0px;
 }
@@ -1342,7 +1340,6 @@ section.event-details .biography span {
   margin-left: 0;
   padding-left: 0;
   list-style: none;
-  margin: 0 auto;
   margin-bottom: 10px;
 }
 .place-event li {
@@ -1363,6 +1360,7 @@ section.event-details .biography span {
 footer {
   background-color: #212121;
   padding: 40px 0px;
+  border-top: 1px solid #5d5d5d;
 }
 footer .foot-container {
   width: 320px;
@@ -1493,6 +1491,7 @@ header {
 }
 header .header-nav {
   height: 40px;
+  margin-left: 0px;
 }
 header .header-nav ul {
   display: inline-block;
@@ -1537,8 +1536,8 @@ a.fixed {
   left: 0;
 }
 section.portada {
-  height: 550px;
-  background: url("../img/img-header.jpg") no-repeat;
+  min-height: 100%;
+  background: url("../img/img-header@2x.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -1555,7 +1554,17 @@ section.portada {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  margin-top: -20px;
+  overflow: hidden;
+}
+section.portada img {
+  width: 70%;
+}
+section.portada h1.title {
+  font-size: 22px;
+  color: #df2630;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin-top: 15px;
 }
 section.portada h2 {
   font-size: 18px;
@@ -1574,6 +1583,13 @@ section.portada h5 {
   margin-top: -10px;
   text-align: center;
 }
+section.portada hr.underline {
+  margin: 0;
+  border: none;
+  width: 50%;
+  border-top: 2px solid #df2630;
+  margin: 0 auto;
+}
 section.portada .link-video {
   color: #df2630;
   -webkit-transition: all 0.5s ease;
@@ -1583,7 +1599,7 @@ section.portada .link-video {
   transition: all 0.5s ease;
 }
 section.portada .link-video i {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 section.portada .link-video:hover {
   color: #420096;
@@ -1804,6 +1820,71 @@ section.portada .link-video:hover {
   padding-left: 35px;
   background: rgba(255,255,255,0.2);
 }
+.container-events .item {
+  display: inline-block;
+  width: 49%;
+}
+.event-info {
+  padding: 30px 0px;
+}
+.event-info span {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  display: block;
+  padding: 10px 0px;
+}
+.event-info p.event-description {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+}
+section.bkgr-past {
+  min-height: 80vh;
+  background: url("../img/bkgr-blur.jpg") no-repeat center/cover;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+section.bkgr-past #info-artist {
+  min-height: 80vh;
+  background: rgba(0,0,0,0.2);
+  margin-top: 10%;
+}
+section.bkgr-past #info-artist .artists-container .artist {
+  width: 33%;
+  display: inline-block;
+}
+section.bkgr-past #info-artist .artists-container .artist .item {
+  display: inline-block;
+  width: 100%;
+  height: 140px;
+  padding: 0px 22px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: left;
+  margin: 10px 0px;
+}
+section.bkgr-past #info-artist .artists-container .artist .item img {
+  width: 100%;
+}
+section.bkgr-past #info-artist .artists-container .artist span {
+  display: block;
+  text-align: center;
+}
 @media only screen and (min-width: 48em) {
   .hidden-desk {
     display: none;
@@ -1944,6 +2025,16 @@ section.portada .link-video:hover {
     height: 100%;
     overflow: hidden;
   }
+  section.portada img {
+    width: 50%;
+  }
+  section.portada .link-video {
+    display: none;
+  }
+  .container-events .item {
+    display: inline-block;
+    width: 32%;
+  }
   .news-artist {
     padding: 20px 10px;
   }
@@ -2034,7 +2125,7 @@ section.portada .link-video:hover {
     background: url("../img/img-j-alvarez.jpg") no-repeat center top/cover;
   }
   section.bkgr-artist {
-    height: 80vh;
+    min-height: 80vh;
     background: url("../img/bkgr-blur.jpg") no-repeat center/cover;
     -webkit-box-align: end;
     -moz-box-align: end;
@@ -2044,7 +2135,7 @@ section.portada .link-video:hover {
     align-items: flex-end;
   }
   section.bkgr-artist #info-artist {
-    border: 1px solid #fff;
+    margin-top: 0px;
     height: 80%;
     background: rgba(0,0,0,0.2);
   }
@@ -2054,9 +2145,19 @@ section.portada .link-video:hover {
   section.bkgr-artist img.artist {
     display: none;
   }
+  section.event-details {
+    padding: 10px 0px;
+  }
   section.event-details img {
     right: 0;
     width: 75%;
+  }
+  section.event-details .location {
+    padding: 0;
+  }
+  .map {
+    background: #212121;
+    padding-bottom: 30px;
   }
   #googleMap {
     width: 100%;
@@ -2064,6 +2165,30 @@ section.portada .link-video:hover {
   }
 }
 @media only screen and (min-width: 64em) {
+  .logo-electro {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 10px;
+    left: 0;
+    top: 0;
+  }
+  .header-nav {
+    margin-left: 60px !important;
+  }
   .menu .navegador li a {
     padding: 0px 15px;
   }
@@ -2079,7 +2204,13 @@ section.portada .link-video:hover {
     right: 20px;
     z-index: 999;
   }
-  .portada:before {
+  section.portada h1.title {
+    font-size: 27px;
+  }
+  section.portada img {
+    width: 40%;
+  }
+  section.portada.home:before {
     content: " ";
     position: absolute;
     top: 0;
@@ -2120,6 +2251,10 @@ section.portada .link-video:hover {
     height: 100%;
     width: 100%;
   }
+  .container-events .item {
+    display: inline-block;
+    width: 24%;
+  }
   .videos-container .artist-img {
     height: 280px;
   }
@@ -2135,14 +2270,38 @@ section.portada .link-video:hover {
   .videos-container .artist-info .form-buttons.right {
     padding-left: 20%;
   }
+  section.event-details {
+    padding: 20px 0px;
+  }
+  section.event-details h6.title {
+    font-size: 28px;
+  }
   section.event-details img {
     right: 0;
     width: 50%;
     top: -30px;
   }
+  section.event-details .location {
+    padding: 0px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  section.event-details .location a {
+    margin-right: 10px;
+  }
+  section.event-details .sale-tickets p,
+  section.event-details .biography p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  section.event-details .biography {
+    margin: 30px 0px;
+  }
 }
 @media only screen and (min-width: 75em) {
-  section.portada {
+  section.portada.home {
     height: 102%;
   }
   .videos-container .artist-img {
