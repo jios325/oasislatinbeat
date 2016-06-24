@@ -130,7 +130,6 @@
     //Estilos para Videos de Artistas por bloque
     .videos-container
         background:url("../img/bkgr-blur.jpg") center/ 230%
-        // background-position: center -130%
         color:#000
         background-attachment:fixed
         .artist-img
@@ -170,7 +169,7 @@
             // border:1px solid #fff
             margin-top:0px
             height:80%
-            background:rgba(0,0,0,0.2)
+            background:rgba(0,0,0,0.2) url("../img/latin-beat-fondo.png") no-repeat right / 70%
         img
             width:100%
         img.artist
@@ -188,4 +187,57 @@
     #googleMap
         width:100%
         height:400px
-        
+    //ESTILOS EVENTOS PASADOS PAGINA INTERNA
+    .movil-portada
+        display:none
+    section.bkgr-past
+        min-height:80vh
+        background:url("../img/bkgr-blur.jpg") no-repeat center / cover
+        align-items:flex-end
+        display:flex
+        position:relative
+        overflow:hidden
+        h1.title-event
+            padding:10px 60px
+            font-size:50px
+            text-align:center
+            font-weight:600 
+        #info-artist
+            // min-height:80vh
+            min-height:auto
+            background:rgba(0,0,0,0.2) url("../img/latin-beat-fondo.png") no-repeat left / 100%
+            margin-top:15%
+            padding-right:0
+            padding-left:0
+            position:relative
+            width:85%
+            .artists-container
+                .artist
+                    background:none
+                    font-size:0
+                    width:49.7%
+                    display:inline-block
+                    margin:5px 0px
+                    .item
+                        padding:0px 50px
+                        margin:10px 0px
+                        height:140px
+                        img
+                            width:100%
+                            opacity:1
+                    &:hover
+                        // opacity:0.5
+                    span
+                        position:initial
+                        display:block
+                        font-size:14px
+                        line-height:normal
+                        width:100%
+            .return-btn
+                display:block
+                position:absolute
+                right:0
+                top:-45px
+                font-size:14px
+                i
+                    font-size:14px
