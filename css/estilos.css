@@ -1886,6 +1886,9 @@ section.portada .link-video:hover {
 .movil-portada img {
   width: 100%;
 }
+.movil-portada.past-events {
+  background: url("../img/img-juan-magan.jpg") no-repeat center/cover;
+}
 section.bkgr-past {
   min-height: 80vh;
   -webkit-box-align: end;
@@ -1902,6 +1905,11 @@ section.bkgr-past {
   display: flex;
   position: relative;
   overflow: hidden;
+  -webkit-transition: all 99999s ease;
+  -moz-transition: all 99999s ease;
+  -o-transition: all 99999s ease;
+  -ms-transition: all 99999s ease;
+  transition: all 99999s ease;
 }
 section.bkgr-past h1.title-event {
   padding: 10px 10px;
@@ -1960,15 +1968,25 @@ section.bkgr-past #info-artist .artists-container .artist span {
 section.bkgr-past #info-artist .return-btn {
   display: none;
 }
+section.bkgr-past.artist {
+  display: none;
+}
 section.galery {
   background: #212121;
   font-size: 0;
-  padding: 5px 0px;
+  padding: 2.5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section.galery .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 .imgContainer {
   display: inline-block;
   width: 49.9%;
-  padding: 5px;
+  padding: 2.5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2340,6 +2358,18 @@ section.galery {
   section.bkgr-past #info-artist .return-btn i {
     font-size: 14px;
   }
+  .imgContainer {
+    width: 33.26%;
+    padding: 5px;
+  }
+  section.bkgr-past.artist {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+  }
 }
 @media only screen and (min-width: 64em) {
   .logo-electro {
@@ -2496,6 +2526,9 @@ section.galery {
   }
   section.bkgr-past #info-artist .artists-container .artist .item {
     padding: 0px 30px;
+  }
+  .imgContainer {
+    width: 19.95%;
   }
 }
 @media only screen and (min-width: 75em) {

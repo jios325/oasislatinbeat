@@ -50,7 +50,7 @@
 			</div>
 		</div>
 	</header>
-	<!-- <div class="movil-portada">
+	<div class="movil-portada past-events">
 		<div id="content-portada" class="container-fluid container">
 			<div class="row middle-xs center-xs">
 				<div class="col-xs-12">
@@ -67,8 +67,8 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
-	<section class="bkgr-past">
+	</div>
+	<section class="bkgr-past artist">
 		<div id="info-artist" class="container-fluid container">
 			<a href="#" class="btn btn-default return-btn"><i class="fa fa-angle-left"></i>Regresar</a>
 			<div class="row middle-xs start-md">
@@ -77,7 +77,7 @@
 				</div> -->
 				<div class="col-xs-12 col-sm-12">
 					<h1 class="title-event hidden-xs show-desk">ELECTRO OASIS LATIN BEAT FEST SUMMER 2016</h1>
-					<div class="artists-container">
+					<div class="artists-container text-center">
 						<a href="#" class="artist">
 							<div class="item">
 								<img src="../img/img-juan-magan.jpg" alt="">
@@ -125,19 +125,33 @@
 		<div class="container-fluid container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12">
-					<a href="#" class="imgContainer">
+					<a href="../img/img-juan-magan.jpg" class="imgContainer">
 						<div class="imgContainer-item">
 							<img src="../img/img-juan-magan.jpg" alt="" style="width:100%">
 						</div>
 					</a>
-					<a href="#" class="imgContainer">
+					<a href="../img/img-tito-el-bambino.jpg" class="imgContainer">
 						<div class="imgContainer-item">
-							<img src="../img/img-juan-magan.jpg" alt="" style="width:100%">
+							<img src="../img/img-tito-el-bambino.jpg" alt="" style="width:100%">
+						</div>
+					</a>
+					<a href="../img/img-j-alvarez.jpg" class="imgContainer">
+						<div class="imgContainer-item">
+							<img src="../img/img-j-alvarez.jpg" alt="" style="width:100%">
 						</div>
 					</a>
 					<a href="#" class="imgContainer">
-						<div class="imgContainer-item">
-							<img src="../img/img-juan-magan.jpg" alt="" style="width:100%">
+						<div class="icon-search">
+							<div class="imgContainer-item">
+								<img src="../img/img-juan-magan.jpg" alt="" style="width:100%">
+							</div>
+						</div>
+					</a>
+					<a href="#" class="imgContainer">
+						<div class="icon-search">
+							<div class="imgContainer-item">
+								<img src="../img/img-juan-magan.jpg" alt="" style="width:100%">
+							</div>
 						</div>
 					</a>
 					<a href="#" class="imgContainer">
@@ -193,7 +207,7 @@
 			<div class="row">
 				<div class="event-info">
 					<div class="col-xs-12">
-						<h3 class="event-title">ELECTRO OASIS LATIN BEAT FEST SUMMER 2016</h3>
+						<h3 class="event-title">Reseña</h3>
 						<span>JULY 9 - AUG 2  /  CANCUN MX</span>
 						<p class="event-description">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, laborum, error qui totam asperiores labore provident quis nihil sapiente quam ut harum amet quibusdam at ad repudiandae dolorem tempore voluptatibus!
@@ -250,7 +264,12 @@
 </script>
 <script>
 	$(document).ready(function(){
-    $('.video-modal').magnificPopup({type:'iframe'});
+    	$('.imgContainer').magnificPopup({
+		  type: 'image',
+		  gallery:{
+		    enabled:true
+		  }
+		});
 	});
 </script>
 </body>

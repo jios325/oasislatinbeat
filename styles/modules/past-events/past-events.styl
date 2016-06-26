@@ -31,12 +31,15 @@
 			margin:10px 0px
 	img
 		width:100%
+.movil-portada.past-events
+	background:url("../img/img-juan-magan.jpg") no-repeat center / cover
 section.bkgr-past
 	min-height:80vh
 	align-items:flex-end
 	display:flex
 	position:relative
 	overflow:hidden
+	transition:all 99999s ease
 	h1.title-event
 		// padding:10px 60px
 		padding:10px 10px
@@ -88,15 +91,21 @@ section.bkgr-past
 					line-height:80px
 		.return-btn
 			display:none
+section.bkgr-past.artist
+	display:none
 	//ESTILOS PAST-EVENTS POR ARTISTA
 section.galery
 	background:$blackColor
 	font-size:0
-	padding:5px 0px
+	padding:2.5px
+	box-sizing:border-box
+	.container-fluid
+		padding-left:0
+		padding-right:0
 .imgContainer
 	display:inline-block
 	width:49.9%
-	padding:5px
+	padding:2.5px
 	box-sizing:border-box
 	position:relative
 	&:hover:after
