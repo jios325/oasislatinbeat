@@ -1,9 +1,9 @@
-   var myCenter = new google.maps.LatLng(21.162746, -86.853439);
+   var myCenter = new google.maps.LatLng(21.0798027, -86.7696354);
 
     function initialize() {
            var mapProp = {//propiedades del MAPA
             center:myCenter,
-            zoom:16,
+            zoom:14,
             scrollwheel:false,
             mapTypeId:google.maps.MapTypeId.ROADMAP
         };
@@ -46,7 +46,7 @@
                 "color": "#f5f5f5"
             },
             {
-                "lightness": 20
+                "lightness": 10
             }
         ]
     },
@@ -55,10 +55,10 @@
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#ffffff"
+                "color": "#000"
             },
             {
-                "lightness": 17
+                "lightness": 10
             }
         ]
     },
@@ -67,7 +67,7 @@
         "elementType": "geometry.stroke",
         "stylers": [
             {
-                "color": "#ffffff"
+                "color": "#000000"
             },
             {
                 "lightness": 29

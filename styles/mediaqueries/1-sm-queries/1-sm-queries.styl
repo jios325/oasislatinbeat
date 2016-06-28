@@ -17,6 +17,8 @@
         display:inline-block
     .menu ul.navegador ul.subnavegador li
         display:block
+        &:hover
+            background:#000
     .menu ul.navegador ul.subnavegador li a
         display:block
         box-sizing:border-box
@@ -109,6 +111,7 @@
         right:20px
         z-index:999
     section.portada
+        background:none
         h1.title
             font-size:27px
         img
@@ -213,27 +216,26 @@
                 justify-content:space-between
                 a
                     width:40%
-        .artist-img.item-2:before
-            background:url("../img/img-alexis-y-fido.jpg") no-repeat center top / cover
-        .artist-img.item-3:before
-            background:url("../img/img-angel-khriz.jpg") no-repeat center top / cover
-        .artist-img.item-4:before
-            background:url("../img/img-j-alvarez.jpg") no-repeat center top / cover
     //EMPIEZAN ESTILOS DE PAGINA POR ARTISTA
     section.bkgr-artist
-        min-height:90vh
+        min-height:auto
         background:url("../img/bkgr-blur.jpg") no-repeat center / cover
         align-items:flex-end
+        padding-top:60px
         #info-artist
-            // border:1px solid #fff
             margin-top:0px
             height:80%
             background:rgba(0,0,0,0.2) url("../img/latin-beat-fondo.png") no-repeat right / 70%
             position:relative
+            padding-left:4rem
+            padding-right:4rem
+            box-sizing:border-box
         img
             width:100%
         img.artist
             display:none
+        h1,h5
+            text-align:left
         .return-btn
             display:block!important
             position:absolute
@@ -244,6 +246,22 @@
             margin:0
             i
                 font-size:14px
+        .buy-tickets
+            display:block!important
+            position:absolute
+            right:64px
+            top:42px
+            padding:20px 20px
+            text-transform:uppercase
+            margin:0
+        .news-artist.black
+            padding:10px
+            text-align:left
+            li
+                font-size:14px
+            .premio p
+                font-size:12px
+            
     section.event-details
         padding:10px 0px
         img
