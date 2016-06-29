@@ -13,18 +13,6 @@
             map:map,
             title:"Ubicación Aquí"
         });
-      //    var contentString = '<div id="content">'+
-     	// '<h1>Titulo del Marker</h1>'+
-     	// '<img style="margin:o auto;"src="images/logo-ecowhite.png" alt="" />'
-      // 	'</div>';
-
-	   //  var infowindow = new google.maps.InfoWindow({
-	   //  content: contentString
-	   // });
-		marker.setMap(map)
-		marker.addListener('click', function() {
-        // infowindow.open(map, marker);
-        });
         map.set('styles', [
           {
         "featureType": "water",
